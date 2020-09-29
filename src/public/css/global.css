@@ -1,0 +1,117 @@
+/* Cuerpo */
+.titulo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem !important;
+    text-align: center;
+}
+
+.texto {
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+h3.titulo {
+    font-weight: bold !important;
+}
+/* Scroll Personalizado */
+
+body::-webkit-scrollbar {
+    width: 7px;
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #4091EC;
+    border-radius: 5px;
+    /*Color naranja #ff9d00*/
+}
+
+body {
+    overflow-y: overlay;
+    overflow-x: hidden;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+}
+
+/* Dark mode scroll */
+/* Dark-mode */
+body.dark {
+    background: rgba(0, 0, 0, .9);
+    color: #FFF;
+}
+
+footer.dark {
+    background: rgba(0, 0, 0, .9) !important;
+    color: #FFF !important;
+}
+
+.dark-mode {
+    background: rgba(0, 0, 0, .9);
+    color: #FFF !important;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.dark-mode::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+
+}
+
+.active {
+    background: orange;
+    color: rgba(0, 0, 0, .9);
+}
+
+.active::after {
+    top: 0;
+    right: 0;
+    left: unset;
+}
+
+span.sun-moon .fas {
+    width: 30px;
+    height: 30px;
+    line-height: 30px !important;
+    display: block;
+    background: none;
+    color: #FFF;
+}
+
+disable-body.dark::-webkit-scrollbar {
+    width: 7px;
+    background: #2f3542;
+}
+
+disable-body.dark::-webkit-scrollbar-thumb {
+	background: #4091EC;
+    border-radius: 5px;
+    /*#ff9d00*/
+}
+
+/* GLOBAL */
+input.telefono[type=number]::-webkit-inner-spin-button, 
+input.telefono[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input.telefono[type=number] { -moz-appearance:textfield; }
+/* COLORES */
+.bg-dark {
+    background: #222222 !important;
+}
